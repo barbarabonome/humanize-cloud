@@ -57,7 +57,8 @@ select {
   background: #fff;
 }
 
-button {
+/* botão dentro dos cards (formulários) mantém largura total */
+.card button {
   width: 100%;
   padding: 12px;
   border: none;
@@ -67,12 +68,46 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.card button:hover {
   background: #4a8ab4;
 }
 
+/* topbar: logo centralizado e botão Sair à direita */
 .topbar {
+  position: relative;
   background: #5b9cc8;
+  padding: 12px 16px;
+  color: #fff;
+}
+
+.topbar-logo {
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.topbar button {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbar button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.topbar {
+  background: #74abd2;
   padding: 15px;
   display: flex;
   justify-content: space-between;

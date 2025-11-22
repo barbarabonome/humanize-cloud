@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Humanize - App</title>
-<link rel="stylesheet" href="styles.css"></head>
-<body>
-<div class="topbar"><h2>Humanize</h2><button onclick="logout()">Sair</button></div>
-<div class="content"><h1>Bem-vindo ao Humanize!</h1>
-<p>Tela genérica do app.</p></div>
-<script src="script.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Humanize - App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .dashboard-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        color: #333;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .welcome-text {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #2b4c63;
+      }
+
+      .humanize-desc {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+      }
+
+      .info-card {
+        background: #e8f3fc;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+        border-left: 6px solid #5b9cc8;
+      }
+
+      .btn-primary {
+        display: inline-block;
+        padding: 12px 18px;
+        background: #5b9cc8;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      .btn-primary:hover {
+        background: #4a8ab4;
+      }
+
+      .user-box {
+        margin-top: 20px;
+        background: #f5faff;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #d3e7f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <img src="logo.png" class="topbar-logo" alt="Humanize" />
+      <button onclick="logout()">Sair</button>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="welcome-text">👋 Bem-vindo ao Humanize!</div>
+
+      <p class="humanize-desc">
+        O <strong>Humanize</strong> é uma plataforma criada para promover
+        bem-estar, engajamento e apoio entre equipes dentro das organizações.
+        Aqui você pode participar de avaliações, responder perguntas, visualizar
+        sua equipe e acompanhar iniciativas voltadas para melhorar o clima
+        organizacional.
+      </p>
+
+      <a href="#" class="btn-primary">Explorar funcionalidades</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
