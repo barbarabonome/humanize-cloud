@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Humanize - Cadastro</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container">
+<img src="logo.png" class="logo">
+<h1>Crie sua conta</h1>
+<div class="card">
+<input type="text" id="cadNome" placeholder="Nome completo">
+<input type="email" id="cadEmail" placeholder="E-mail">
+<input type="password" id="cadSenha" placeholder="Senha">
+<select id="cadTipo">
+<option value="funcionario">Funcionário</option>
+<option value="gestor">Gestor</option>
+</select>
+<select id="cadEquipe">
+<option value="">Selecione sua equipe</option>
+</select>
+<button onclick="cadastrar()">Cadastrar</button>
+<p class="link">Já possui conta? <a href="index.html">Entrar</a></p>
+</div>
+</div>
+<script src="script.js"></script>
+</body></html>

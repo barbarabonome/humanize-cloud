@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: #74abd2;
+  color: #fff;
+}
+
+.container {
+  max-width: 350px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  color: #333;
+
+  /* ESSENCIAL: permite o dropdown aparecer */
+  overflow: visible !important;
+}
+
+.card input,
+.card select {
+  width: 100%; /* antes estava 90%, atrapalhava o dropdown */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+}
+
+/* Inputs específicos: reduzir largura visual para Nome, E-mail e Senha */
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"] {
+  max-width: 280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* ESSENCIAL: dropdown se sobrepor */
+select {
+  z-index: 10;
+  position: relative;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #5b9cc8;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #4a8ab4;
+}
+
+.topbar {
+  background: #5b9cc8;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
